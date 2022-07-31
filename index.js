@@ -98,7 +98,7 @@ const animate = () => {
         console.log(playerDist)
         if (playerDist - enemy.radius - player.radius < 1) {
             cancelAnimationFrame(animationId);
-            alert("Game over. Your score: ", score);
+            alert(`Game over. Your score: ${score}`);
             location.reload();
         };
 
